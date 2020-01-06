@@ -1,21 +1,7 @@
-# 目标名字
-#--kstm32-autoconf:name
-TARGET = STM32F103C8T6
+include kstm32-autogen.mk
 
 # 输出文件夹
 BUILD_DIR = build
-
-# C源 用到的库什么的都写在这
-#--kstm32-autoconf:sources
-C_SOURCES = 
-
-######################################
-
-
-
-# ASM sources
-#--kstm32-autoconf:asm
-ASM_SOURCES = 
 
 ######################################
 # building variables
@@ -63,16 +49,8 @@ MCU = $(CPU) -mthumb $(FPU) $(FLOAT-ABI)
 # AS defines
 AS_DEFS = 
 
-# C defines
-#--kstm32-autoconf:defines
-C_DEFS = 
-
 # AS includes
 AS_INCLUDES = 
-
-# C includes
-#--kstm32-autoconf:includes
-C_INCLUDES = 
 
 # compile gcc flags
 ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
