@@ -1,4 +1,4 @@
-include kstm32-autogen.mk
+include kstm32-makefile-autogen.mk
 
 # 输出文件夹
 BUILD_DIR = build

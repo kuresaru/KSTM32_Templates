@@ -1,4 +1,4 @@
-include kstm32-autogen.mk
+include kstm32-makefile-autogen.mk
 
 ######################################
 # building variables
