@@ -3,6 +3,7 @@ include kstm32-makefile-autogen.mk
 ######################################
 # building variables
 ######################################
+BUILD_DIR = build
 # debug build?
 DEBUG = 1
 # optimization
