@@ -29,6 +29,7 @@ SZ = $(PREFIX)size
 endif
 HEX = $(CP) -O ihex
 BIN = $(CP) -O binary -S
+RD := $(RM) -r
  
 #######################################
 # CFLAGS
@@ -114,8 +115,7 @@ $(BUILD_DIR):
 # clean up
 #######################################
 clean:
-	-cmd /C "rd /S /Q $(BUILD_DIR)"
-	-rm -rf $(BUILD_DIR)
+	$(RD) $(BUILD_DIR)
   
 #######################################
 # dependencies
